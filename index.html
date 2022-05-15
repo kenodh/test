@@ -4,11 +4,13 @@
 
 <h1>Thnt</h1>
 
-<button type="button" onclick="openInNewTab()">Calc</button>
+<button type="button" onclick="openInNewTab("calculator.html")">Calc</button>
+<button type="button" onclick="openInNewTab("calend.html")">calend</button>
+<button type="button" onclick="openInNewTab("clock.html")">clock</button>
 
 <script>
-  function openInNewTab() {
-    window.open("calculator.html", '_blank').focus();
+  function openInNewTab(url) {
+    window.open(url, '_blank').focus();
   }
 </script>
 </body>
